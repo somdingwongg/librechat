@@ -21,7 +21,6 @@ endpoints:
           - command-r-08-2024
           - command-r-plus-08-2024
           - command-r7b-12-2024
-          - command-r7b-arabic-02-2025
         fetch: false
       modelDisplayLabel: "cohere"
       titleModel: "command"
