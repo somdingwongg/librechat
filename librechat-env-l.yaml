@@ -20,10 +20,12 @@ endpoints:
         - "presence_penalty"
         - "temperature"
         - "top_p"
+
 interface:
   modelSelect: true
   parameters: true
   presets: true
+
 modelSpecs:
   enforce: false
   prioritize: true
@@ -31,18 +33,16 @@ modelSpecs:
     - openAI
     - google
     - anthropic
-
   list:
     - name: "cohere-base"
       label: "Base Model"
       preset:
         endpoint: "cohere"
         model: "command-a-03-2025"
-        modelLabel: "Base"
-
+        modelLabel: "Base Model"
     - name: "cohere-reasoning"
       label: "Reasoning Model"
       preset:
         endpoint: "cohere"
         model: "command-a-reasoning-08-2025"
-        modelLabel: "Reasoning"
+        modelLabel: "Reasoning Model"
