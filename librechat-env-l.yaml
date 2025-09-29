@@ -31,16 +31,18 @@ modelSpecs:
     - openAI
     - google
     - anthropic
+
   list:
     - name: "cohere-base"
-      label: "Cohere • Command-A (Default)"
+      label: "Base Model"
       preset:
         endpoint: "cohere"
         model: "command-a-03-2025"
-        modelLabel: "Cohere • Command-A"
+        modelLabel: "Base"
+
     - name: "cohere-reasoning"
-      label: "Cohere • Command-A Reasoning"
+      label: "Reasoning Model"
       preset:
         endpoint: "cohere"
         model: "command-a-reasoning-08-2025"
-        modelLabel: "Cohere • Command-A Reasoning"
+        modelLabel: "Reasoning"
