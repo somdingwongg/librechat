@@ -20,16 +20,24 @@ endpoints:
         - "presence_penalty"
         - "temperature"
         - "top_p"
-
+interface:
+  modelSelect: true
+  parameters: true
+  presets: true
 modelSpecs:
   enforce: false
+  prioritize: true
+  addedEndpoints:
+    - openAI
+    - google
+    - anthropic
   list:
     - name: "cohere-base"
       label: "Cohere • Command-A (Default)"
       preset:
         endpoint: "cohere"
         model: "command-a-03-2025"
-        modelLabel: "Cohere • Command-A (Default)"
+        modelLabel: "Cohere • Command-A"
     - name: "cohere-reasoning"
       label: "Cohere • Command-A Reasoning"
       preset:
