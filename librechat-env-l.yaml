@@ -24,14 +24,15 @@ endpoints:
 modelSpecs:
   enforce: false
   list:
-    - preset:
+    - name: "cohere-base"
+      label: "Cohere • Command-A (Default)"
+      preset:
         endpoint: "cohere"
         model: "command-a-03-2025"
-        modelLabel: "Cohere"
-      label: "Cohere"
-
-    - preset:
+        modelLabel: "Cohere • Command-A (Default)"
+    - name: "cohere-reasoning"
+      label: "Cohere • Command-A Reasoning"
+      preset:
         endpoint: "cohere"
         model: "command-a-reasoning-08-2025"
-        modelLabel: "Cohere Reasoning"
-      label: "Cohere Reasoning"
+        modelLabel: "Cohere • Command-A Reasoning"
