@@ -1,29 +1,17 @@
-version: 1.2.4
-
+version: 1.2.0
 cache: true
 
 endpoints:
   custom:
-    # cohere
-    # Model list: https://dashboard.cohere.com/playground/chat
     - name: "cohere"
       apiKey: "${COHERE_API_KEY}"
-      baseURL: "https://api.cohere.ai/v1"
+      baseURL: "https://api.cohere.ai/compatibility/v1"
       models:
         default:
-          - c4ai-aya-expanse-32b
-          - c4ai-aya-vision-32b
-          - command
-          - command-a-03-2025
-          - command-light-nightly
-          - command-nightly
-          - command-r
-          - command-r-08-2024
-          - command-r-plus-08-2024
-          - command-r7b-12-2024
-        fetch: false
+          - "command-a-03-2025"
+      fetch: false
       modelDisplayLabel: "cohere"
-      titleModel: "command"
+      titleModel: "command-a-03-2025"
       dropParams:
         - "stop"
         - "user"
