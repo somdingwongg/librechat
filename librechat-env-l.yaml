@@ -20,3 +20,18 @@ endpoints:
         - "presence_penalty"
         - "temperature"
         - "top_p"
+
+modelSpecs:
+  enforce: false
+  list:
+    - preset:
+        endpoint: "cohere"
+        model: "command-a-03-2025"
+        modelLabel: "Cohere"
+      label: "Cohere"
+
+    - preset:
+        endpoint: "cohere"
+        model: "command-a-reasoning-08-2025"
+        modelLabel: "Cohere Reasoning"
+      label: "Cohere Reasoning"
